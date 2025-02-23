@@ -2,9 +2,10 @@ import { Component , OnInit } from '@angular/core';
 import { Course } from '../model/Course';
 import { CourseService } from '../Services/course.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
   // templateUrl: './home.component.html',  // Fixed: removed empty imports array

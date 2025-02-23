@@ -1,6 +1,7 @@
 <p>home works!</p>
 <ul>
   <li *ngFor="let course of courses">
-    {{ course.name }}
+    <a [routerLink]="['course', course.id]">{{course.name}}</a>
+    {{ course.description}}
   </li>
 </ul>
