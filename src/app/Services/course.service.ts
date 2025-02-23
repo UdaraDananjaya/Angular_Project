@@ -19,4 +19,8 @@ export class CourseService {
       { id: 2, name: 'Enterprise Application Development', description: 'Year 4 Semester 2' }
     ];
   }
+  
+  getCourseDetails(id: number): Course {
+    return this.getAll().find((course: Course) => course.id === id)!;
+  }
 }
